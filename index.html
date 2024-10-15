@@ -435,7 +435,7 @@
          		margin: 20, // Space between items
          		// autoplay: true, // Enable autoplay
          		autoplayTimeout: 3000, // Autoplay interval in milliseconds
-            	    smartSpeed: 50, // Set the speed of manual transitions to 1000 milliseconds (1 second)
+            	    smartSpeed: 1000, // Set the speed of manual transitions to 1000 milliseconds (1 second)
             	    autoWidth: true,
             	    loop:true,
             	    center:true
@@ -490,7 +490,7 @@
          		margin: 20, // Space between items
          		// autoplay: true, // Enable autoplay
          		autoplayTimeout: 3000, // Autoplay interval in milliseconds
-            	    smartSpeed: 50, // Set the speed of manual transitions to 1000 milliseconds (1 second)
+            	    smartSpeed: 1000, // Set the speed of manual transitions to 1000 milliseconds (1 second)
          	});
          
          	gDisp.on("changed.owl.carousel",function(event){
@@ -566,7 +566,7 @@
                    event.preventDefault();
                    $('html, body').animate({
                      scrollTop: total
-                   }, 1000);
+                   }, 3000);
                  }
                });
          
@@ -576,8 +576,8 @@
          
                $('.scroll-to-top').click(function () {
                  $('html, body').animate({
-                   scrollTop: 1
-                 }, 1000);
+                   scrollTop: 0
+                 }, 3000);
                });
          
          });
